@@ -3,85 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pave Väisänen – Kotisivut</title>
-  <meta name="description" content="Pave Väisänen – henkilökohtainen sivu. Tutustu projekteihin, osaamiseen ja yhteystietoihin." />
-  <meta name="keywords" content="Pave Väisänen, pavevaisanen, portfolio, Suomi" />
+
+  <!-- SEO -->
+  <title>Pave Väisänen – Portfolio, projektit ja yhteystiedot</title>
+  <meta name="description" content="Pave Väisänen – suomalainen luontoharrastaja. Tutustu projekteihin, osaamiseen ja yhteystietoihin." />
+  <link rel="canonical" href="https://pavevaisanen.fi/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Pave Väisänen" />
-  <meta property="og:description" content="Henkilökohtainen sivu ja projektit" />
+  <meta property="og:title" content="Pave Väisänen – Portfolio" />
+  <meta property="og:description" content="Projektit, osaaminen ja yhteystiedot" />
   <meta property="og:type" content="website" />
 
-  <!-- Simple styling -->
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #0f172a;
-      color: #e2e8f0;
-      text-align: center;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 60px 20px;
-    }
-    h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 20px;
-      background: #38bdf8;
-      color: #000;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-    footer {
-      margin-top: 60px;
-      font-size: 14px;
-      color: #94a3b8;
-    }
-  </style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
 
-  <!-- Structured data  -->
+  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Pave Väisänen",
     "url": "https://pavevaisanen.fi",
-    "sameAs": []
+    "sameAs": [
+      "https://www.instagram.com/pavevaisanen/",
+      "https://www.facebook.com/pivaisan"
+    ],
+    "jobTitle": "Biologi",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "FI"
+    }
   }
   </script>
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-43HRLR63M7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-43HRLR63M7');
+</script>
+
 <body>
   <div class="container">
-    <h1>Pave Väisänen</h1>
-    <p>Tervetuloa viralliselle sivulleni.</p>
+    
+    <header>
+      <h1>Pave Väisänen</h1>
+      <p class="subtitle">Biologi ja projektien rakentaja</p>
+    </header>
 
-    <a class="btn" href="mailto:info@pavevaisanen.fi">Ota yhteyttä</a>
+    <img src="pavevaisanen.jpg" alt="Pave Väisänen" class="profile-img" />
 
-    <div style="margin-top:40px;">
-      <p>Seuraa minua:</p>
+    <section>
+      <h2>Kuka on Pave Väisänen?</h2>
+      <p>
+        Pave Väisänen on suomalainen biologi.
+      </p>
+    </section>
+
+<!--    <section>-->
+<!--      <h2>Osaaminen</h2>-->
+<!--      <p>-->
+<!--        Pave Väisänen työskentelee ohjelmistokehityksen parissa ja hänen osaamiseensa kuuluvat mm.-->
+<!--        SwiftUI, reaaliaikainen audioprosessointi, käyttöliittymäsuunnittelu sekä datan visualisointi.-->
+<!--      </p>-->
+<!--    </section>-->
+<!---->
+<!--    <section>-->
+<!--      <h2>Projektit</h2>-->
+<!--      <p>-->
+<!--        Sivulta löydät Pave Väisäsen projekteja, kuten spectrogram-sovelluksia ja muita teknisiä toteutuksia,-->
+<!--        joissa yhdistyvät ääni, data ja visuaalisuus.-->
+<!--      </p>-->
+<!--    </section>-->
+
+    <section>
+      <h2>Yhteystiedot</h2>
+      <a class="btn" href="mailto:info@pavevaisanen.fi">Ota yhteyttä</a>
+    </section>
+
+    <section>
+      <h2>Seuraa Pave Väisästä</h2>
       <p>
         <a href="https://www.facebook.com/pivaisan" target="_blank">Facebook</a> |
         <a href="https://www.instagram.com/pavevaisanen/" target="_blank">Instagram</a> |
-        <a href="https://www.flickr.com/photos/204391790@N04/" target="_blank">Flickr</a>
+        <a href="https://www.flickr.com/photos/204391790@N04/" target="_blank">Flickr</a> |
         <a href="https://pin.it/6PUt0Tutm" target="_blank">Pinterest</a>
       </p>
-    </div>
+    </section>
 
     <footer>
       © 2026 Pave Väisänen
     </footer>
+
   </div>
 </body>
 </html>
